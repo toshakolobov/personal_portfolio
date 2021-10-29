@@ -1,10 +1,13 @@
-<h1>THIS IS HOME PAGE</h1>
+<h1>toshakolobov portfolio</h1>
+
+<a href="{% url 'blog:all_blogs' %}">Blogs</a>
 
 {% load static %}
 
-<a href="{% static 'portfolio/pdffile.pdf' %}">PDF FILE</a>
-<br>
 <img src="{% static 'portfolio/papajohns.PNG' %}">
+<br>
+<a href="{% static 'portfolio/pdffile.pdf' %}">TIGUAN PRICELIST</a>
+<br>
 
 {% for project in projects %}
 

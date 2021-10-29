@@ -1,1 +1,11 @@
-Hello blog
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<div class="container text-center">
+    <h1>Blog</h1>
+    <h2>toshakolobov was written {{ entries|length }} blogs</h2>
+    {% for entry in entries %}
+        <h3>{{ entry.title }}</h3>
+        <h5>{{ entry.date }}</h5>
+        <p>{{ entry.description }}</p>
+    {% endfor %}
+</div>

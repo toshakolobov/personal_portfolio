@@ -1,5 +1,11 @@
 <h1>THIS IS HOME PAGE</h1>
 
+{% load static %}
+
+<a href="{% static 'portfolio/pdffile.pdf' %}">PDF FILE</a>
+<br>
+<img src="{% static 'portfolio/papajohns.PNG' %}">
+
 {% for project in projects %}
 
     <h2>{{ project.title }}</h2>

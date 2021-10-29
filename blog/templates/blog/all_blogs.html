@@ -4,7 +4,7 @@
     <h1>Blog</h1>
     <h2>toshakolobov was written {{ entries|length }} blogs</h2>
     {% for entry in entries %}
-        <h3>{{ entry.title }}</h3>
+        <a href="{% url 'blog:detail' entry.id %}"><h3>{{ entry.title }}</h3></a>
         <h5>{{ entry.date }}</h5>
         <p>{{ entry.description }}</p>
     {% endfor %}
